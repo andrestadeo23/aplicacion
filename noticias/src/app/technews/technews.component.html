@@ -1,0 +1,16 @@
+<div class="container-fluid mt-5">
+    <h4>Tecnolog&iacute;a</h4>
+    <div class="row">
+        <div *ngFor = "let t of techNewsDisplay" class="col-lg-3 mt-3 mb-3">
+            <div class="box">
+                <img src="{{t.urlToImage}}" width="100%" alt="">
+                <h5 class="mt-2 mb-2">{{t.title}}</h5>
+                <a href="{{t.url}}" target="_blank" class="btn btn-dark btn-sm mt-2">Leer m&aacute;s</a>
+            </div>
+            
+            <!--<p>{{d.description}}</p>-->
+           
+        </div>
+        <div ></div>
+    </div>
+</div>

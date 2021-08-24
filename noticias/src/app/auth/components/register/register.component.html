@@ -1,0 +1,16 @@
+<div class = 'row m-0 w-100'>
+    <div class = 'col-md-4 offset-4 mt-5' *ngIf = '!this.isLogin'>
+        <h4>Reg&iacute;strate</h4>
+        <form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+            <div class = 'form-group'><input class = 'form-control' type = "text" name = "username" placeholder = "Usuario" ngModel>
+            </div>
+            <div class = 'form-group'><input class = 'form-control' type = "email" name = "email" placeholder = "Email" ngModel>
+            </div>
+            <div class = 'form-group'><input class = 'form-control' type = "password" name = "password" placeholder = "Contrase&ntilde;a" ngModel></div>
+            <input class= 'btn btn-outline-info' type = "submit" value = "Registrar">
+        </form>
+    </div>
+    <div class = 'col-md-4 offset-4 mt-5' *ngIf = 'this.isLogin'>
+        <h5>Est&aacute;s Registrado</h5>
+    </div>
+</div>
